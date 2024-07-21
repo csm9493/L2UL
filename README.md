@@ -1,4 +1,4 @@
-# Learning to Unlearn: Instance-Wise Unlearning for Pre-trained Classifiers 
+# Learning to Unlearn: Instance-Wise Unlearning for Pre-trained Classifiers [AAAI 2024]
 
 Sungmin Cha, Sungjun Cho, Dasol Hwang, Honglak Lee and Taesup Moon, Moontae Lee
 
