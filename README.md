@@ -40,7 +40,9 @@ See environment.yml
 #### Relevant scripts:
 
 main_pretrain_cifar100_resnet50.py
+
 main_pretrain_cifar10_resnet18.py
+
 main_pretrain_utkface_resnet18.py
 
 #### Note: For ViT models trained on CIFAR-100, we used the pre-trained model from HuggingFace(Ahmed9275/Vit-Cifar100).
