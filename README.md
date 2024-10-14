@@ -35,6 +35,10 @@ See environment.yml
 3. Download the UTKFace dataset from [this link](https://www.kaggle.com/datasets/jangedoo/utkface-new) and place it in the './data/' directory.
 4. Run the unlearning script: ./run_unlearn_utkface.sh
 
+### *Reproducibility Issues Due to Experimental Setup*
+
+Depending on the experimental environment, using the reported hyperparameter values for the L2UL algorithm may yield lower performance than what is presented in the paper. In such cases, we recommend to find new hyperparameter values by adjusting 'pgd_eps' to a range of 1.0 to 5.0 or 'unlearn_lr' to a range of 0.001 to 0.0001.
+
 
 ### Additional: Pretraining ResNet-18/50 Models on CIFAR-10/100 or UTKFace
 #### Relevant scripts:

@@ -8,8 +8,8 @@ CUDA_VISIBLE_DEVICES=0 python main_pretrain_utkface_resnet18.py --age_grouping '
 
 
 # Unlearning
-CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'TNN' --seed 0
-CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'MFD' --seed 0
-CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'balanced' --seed 0
-CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'groups' --seed 0
-CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'tens' --seed 0
+CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'TNN' --seed 0 --num-adv-images 300  --pgd-eps 2.0  --unlearn-lr 0.001 --reg-lamb 1.0
+CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'MFD' --seed 0 --num-adv-images 300  --pgd-eps 2.0  --unlearn-lr 0.001 --reg-lamb 1.0
+CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'balanced' --seed 0 --num-adv-images 300  --pgd-eps 2.0  --unlearn-lr 0.001 --reg-lamb 1.0
+CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'groups' --seed 0 --num-adv-images 300  --pgd-eps 2.0  --unlearn-lr 0.001 --reg-lamb 1.0
+CUDA_VISIBLE_DEVICES=0 python main_unlearn_cifar10_mixed_label_resnet18.py  --age_grouping 'tens' --seed 0 --num-adv-images 300  --pgd-eps 2.0  --unlearn-lr 0.001 --reg-lamb 1.0
