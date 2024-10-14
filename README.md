@@ -15,13 +15,35 @@ See environment.yml
 
 -------
 
-## How to implement?
+## Implementation Guide
 
-1. conda env create -f environment.yml
-2. git clone https://github.com/csm9493/L2UL.git
-3. cd L2UL
-4. mkdir result_data
-5. ./run.sh
+### Setting Up the Environment and Folder
+1. Create the environment: conda env create -f environment.yml
+2. Install necessary libraries: pip install transformers
+3. Clone the repository: git clone https://github.com/csm9493/L2UL.git
+4. Navigate to the project directory: cd L2UL
+5. Create a folder for storing results: mkdir result_data
+
+### Unlearning for ResNet-18/50 and ViT Models Trained on CIFAR-10/100 or ImageNet-1k
+1. Navigate to the project directory: cd L2UL
+2. Run the unlearning script: ./run_unlearn_cifar_imagenet.sh
+
+
+### Unlearning for ResNet-18 Model Trained on the UTKFace Dataset
+1. Navigate to the project directory: cd L2UL
+2. Create a folder for dataset storage: mkdir data
+3. Download the UTKFace dataset from [this link](https://www.kaggle.com/datasets/jangedoo/utkface-new) and place it in the './data/' directory.
+4. Run the unlearning script: ./run_unlearn_utkface.sh
+
+
+### Additional: Pretraining ResNet-18/50 Models on CIFAR-10/100 or UTKFace
+#### Relevant scripts:
+
+main_pretrain_cifar100_resnet50.py
+main_pretrain_cifar10_resnet18.py
+main_pretrain_utkface_resnet18.py
+
+#### Note: For ViT models trained on CIFAR-100, we used the pre-trained model from HuggingFace(Ahmed9275/Vit-Cifar100).
 
 -------
 ## Citation
