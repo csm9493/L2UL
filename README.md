@@ -1,6 +1,6 @@
 # Learning to Unlearn: Instance-Wise Unlearning for Pre-trained Classifiers [AAAI 2024]
 
-Sungmin Cha, Sungjun Cho, Dasol Hwang, Honglak Lee and Taesup Moon, Moontae Lee
+Sungmin Cha, Sungjun Cho, Dasol Hwang, Honglak Lee, Taesup Moon, and Moontae Lee
 
 Paper: [[Arxiv](https://arxiv.org/abs/2301.11578)]
 
