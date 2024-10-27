@@ -76,7 +76,8 @@ def main():
     iters = args.pgd_iter
     alpha = args.pgd_alpha
     
-    k_arr = [16, 64, 128, 256]
+    k_arr = [16]
+#     k_arr = [16, 64, 128, 256]
     
     D_r_acc = []
     D_f_acc = []

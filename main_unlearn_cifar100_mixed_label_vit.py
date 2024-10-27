@@ -93,7 +93,8 @@ def main():
     alpha = args.pgd_alpha
     
     # k: number of unlearning data
-    k_arr = [1, 2, 4, 8, 16, 32, 64, 128, 256]
+    k_arr = [16]
+#     k_arr = [16, 32, 64, 128, 256]
     
     Dr_acc = []
     Df_acc = []
